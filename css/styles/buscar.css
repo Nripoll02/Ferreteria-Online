@@ -1,0 +1,41 @@
+.container__buscar{
+	margin: 2rem;
+	padding: 0;
+}
+
+.container__buscar input {
+	outline: none;
+	box-sizing: border-box;
+	/* height: 60px;
+	width: 0px; */
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #D50000;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+
+	width: 80px;
+	height: 80px;
+	background: #05852b;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
