@@ -1,3 +1,12 @@
+<?php
+
+    session_start();
+    if(isset($_SESSION['usuario'])){
+        header("location: pages/inicio.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

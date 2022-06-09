@@ -1,18 +1,17 @@
 <?php
+
+session_start();
 include 'conexion_db.php';
 
 $correo = $_POST['email'];
 $contrasenia = $_POST['contrasenia'];
+$contrasenia = hash('sha512', $contrasenia);
 
-$validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo' and contrasena='$contrasenia'");
+$validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo' and contrasenia='$contrasenia'");
 
 if(mysqli_num_rows($validar_login) > 0){
-    echo'
-        <script>
-            alert("Inicio de sesion correcto");
-            window.location = "../pages/inicio.php";
-        </script>
-    ';
+    $_SESSION['usuario'] = $correo;
+        header("location:../pages/inicio.php");
     exit();
 }else{
     echo'

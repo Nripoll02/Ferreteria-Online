@@ -6,9 +6,11 @@
     $correo = $_POST['email'];
     $usuario = $_POST['usuario'];
     $contrasenia = $_POST['contrasenia'];
+
+    //Encriptamiento de la contraseña
     $contrasenia = hash('sha512', $contrasenia);
 
-    $query = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasena) 
+    $query = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasenia) 
     VALUES('$nombre_completo','$correo','$usuario','$contrasenia')";
 
     //Verificacion de correo no repetido

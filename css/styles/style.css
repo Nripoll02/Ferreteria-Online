@@ -36,6 +36,10 @@ nav a:hover{
     color: black;
 }
 
+.btn_logOut a{
+    text-decoration: none;
+    color: #000;
+}
 
 
 

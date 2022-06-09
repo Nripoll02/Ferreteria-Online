@@ -1,3 +1,21 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['usuario'])){
+  echo'
+    <script>
+      alert("Por favor, debes iniciar sesion");
+      window.location = "../index.php";
+    </script>
+  ';
+  session_destroy();
+  die();
+  
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +41,7 @@
     <div>
       <h1 class="logo">FERRETERIA ONLINE</h1>
       <nav>
-      <a   href="../index.php">Registrarse</a>
-      <a   href="../index.php">Iniciar Sesion</a>
+      <a  href="../login_register/cerrar_sesion.php">Log out</a>
       </nav>
     </div>
     
