@@ -277,6 +277,17 @@ h4{
     transform: scale(1.15);
 }
 
+.formImagenes{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+.formImagenes input{
+    margin: 5px;
+    padding: 5px;
+}
+
 
 .footer{
     margin-bottom: 0;

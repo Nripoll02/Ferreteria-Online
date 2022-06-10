@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if(!isset($_SESSION['usuario'])){
+if(!isset($_SESSION['email'])){
   echo'
     <script>
       alert("Por favor, debes iniciar sesion");
@@ -12,6 +12,7 @@ if(!isset($_SESSION['usuario'])){
   die();
   
 }
+
 ?>
 
 <!DOCTYPE html>

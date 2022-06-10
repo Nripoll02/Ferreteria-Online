@@ -1,18 +1,18 @@
-<?php
+<!-- <?php
 
-session_start();
-if(!isset($_SESSION['usuario'])){
-  echo'
-    <script>
-      alert("Por favor, debes iniciar sesion");
-      window.location = "../index.php";
-    </script>
-  ';
-  session_destroy();
-  die();
+// session_start();
+// if(!isset($_SESSION['usuario'])){
+//   echo'
+//     <script>
+//       alert("Por favor, debes iniciar sesion");
+//       window.location = "../index.php";
+//     </script>
+//   ';
+//   session_destroy();
+//   die();
   
-}
-?>
+// }
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,12 @@ if(!isset($_SESSION['usuario'])){
 
 
   <header>
-    <h1 class="logo">NOSOTROS</h1>
+  <div>
+      <h1 class="logo">NOSOTROS</h1>
+      <nav>
+      <a  href="../login_register/cerrar_sesion.php">Log out</a>
+      </nav>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">

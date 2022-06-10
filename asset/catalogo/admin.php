@@ -24,8 +24,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="icon" href="../faticon.png">
-  <link rel="stylesheet" href="../css/styles/style.css">
-  <title>Nosotros</title>
+  <link rel="stylesheet" href="../../css/styles/style.css">
+  <title>Subir Imagenes</title>
 </head>
 
 <body class="body_administrar">
@@ -34,12 +34,7 @@
 
 
   <header>
-  <div>
-      <h1 class="logo">ADMINISTRAR</h1>
-      <nav>
-      <a  href="../login_register/cerrar_sesion.php">Log out</a>
-      </nav>
-    </div>
+    <h1 class="logo">ADMINISTRAR</h1>
 
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
@@ -50,16 +45,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="inicio.php">INICIO</a>
+              <a class="nav-link" href="../../admin/inicio.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="catalogo.php">CATALOGO</a>
+              <a class="nav-link " href="../../admin/catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="admin.php">ADMINISTRAR</a>
+              <a class="nav-link " href="../../admin/admin.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.php">NOSOTROS</a>
+              <a class="nav-link" href="../../admin/nosotros.php">NOSOTROS</a>
             </li>
            
           </ul>
@@ -75,10 +70,13 @@
 
   <div class="informacion">
   
-    <span class="btn_admin">
-        <a href="#">ADMINISTRAR USUARIOS</a>
-        <a href="../asset/catalogo/admin.php">ADMINISTRAR CATALOGO</a>
-    </span>
+    <form class="formImagenes" action="proceso_guardar.php" method="POST" enctype="multipart/form-data">
+        <input type="text" REQUIRED name="nombre" placeholder="Nombre..."></input>
+        <input type="file" REQUIRED name="imagen"></input>
+        <input type="submit" class="inputImagenes" value="Subir" ></input>
+
+
+    </form>
         
     
   </div>
