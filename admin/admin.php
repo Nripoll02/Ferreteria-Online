@@ -1,18 +1,11 @@
-<!-- <?php
+<?php
+  if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 1){
+    header("Location:http://localhost/login_register/login_usuarios.php");
+  }
 
-// session_start();
-// if(!isset($_SESSION['usuario'])){
-//   echo'
-//     <script>
-//       alert("Por favor, debes iniciar sesion");
-//       window.location = "../index.php";
-//     </script>
-//   ';
-//   session_destroy();
-//   die();
-  
-// }
-?> -->
+  $user = $_SESSION['usuario'];
+  echo "<h1> Welcome  </h1>"
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
