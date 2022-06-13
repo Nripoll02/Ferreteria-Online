@@ -1,6 +1,14 @@
 <?php
-  if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 1){
-    header("Location:http://localhost/login_register/login_usuarios.php");
+include '../login_register/login_usuario.php';
+
+  if(!isset($_SESSION[$rol])){
+    header("Location:http://localhost/login_register/login_usuario.php");
+  }
+  if($_SESSION[$rol] === 0){
+    header("Location:../pages/inicio.php");
+  }
+  else{
+    header("Location:admin.php");
   }
 
   $user = $_SESSION['usuario'];
