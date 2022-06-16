@@ -1,18 +1,18 @@
 <?php
-include '../login_register/login_usuario.php';
 
-  if(!isset($_SESSION[$rol])){
-    header("Location:http://localhost/login_register/login_usuario.php");
-  }
-  if($_SESSION[$rol] === 0){
-    header("Location:../pages/inicio.php");
-  }
-  else{
-    header("Location:admin.php");
-  }
+session_start();
+if(!isset($_SESSION['email'])){
+  echo'
+    <script>
+      alert("Por favor, debes iniciar sesion");
+      window.location = "../index.php";
+    </script>
+  ';
+  session_destroy();
+  die();
+  
+}
 
-  $user = $_SESSION['usuario'];
-  echo "<h1> Welcome  </h1>"
 ?> 
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ include '../login_register/login_usuario.php';
   <title>Nosotros</title>
 </head>
 
-<body class="body_administrar">
+<body>
 
 
 
@@ -54,13 +54,13 @@ include '../login_register/login_usuario.php';
               <a class="nav-link" href="inicio.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="catalogo.php">CATALOGO</a>
+              <a class="nav-link " href="../pages/catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="admin.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.php">NOSOTROS</a>
+              <a class="nav-link" href="../pages/nosotros.php">NOSOTROS</a>
             </li>
            
           </ul>
@@ -77,8 +77,7 @@ include '../login_register/login_usuario.php';
   <div class="informacion">
   
     <span class="btn_admin">
-        <a href="#">ADMINISTRAR USUARIOS</a>
-        <a href="../asset/catalogo/admin.php">ADMINISTRAR CATALOGO</a>
+        <a href="../reseñas/editar_reseñas.php">EDITAR RESEÑAS</a>
     </span>
         
     

@@ -1,17 +1,15 @@
  <?php
 
 session_start();
-if(!isset($_SESSION['usuario'])){
+if(!isset($_SESSION['email'])){
   echo'
     <script>
       alert("Por favor, debes iniciar sesion");
       window.location = "../index.php";
     </script>
-  ';
-  session_destroy();
-  die();
-  
+  '; 
 }
+
 
 ?> 
 
@@ -45,6 +43,9 @@ if(!isset($_SESSION['usuario'])){
       </nav>
     </div>
     
+    
+
+
 
     <!-- Menu con Bootstrap -->
 
@@ -60,13 +61,13 @@ if(!isset($_SESSION['usuario'])){
               <a class="nav-link" href="inicio.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="catalogo.php">CATALOGO</a>
+              <a class="nav-link" href="../pages/catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="admin.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.php">NOSOTROS</a>
+              <a class="nav-link" href="../pages/nosotros.php">NOSOTROS</a>
             </li>
           </ul>
         </div>
@@ -75,6 +76,8 @@ if(!isset($_SESSION['usuario'])){
 
 
   </header>
+
+
 
   <section class="informacion">
     <section class="info">

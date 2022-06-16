@@ -42,18 +42,18 @@
                     <!--Login-->
                     <form action="login_register/login_usuario.php" method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" name="email" placeholder="Correo Electronico">
-                        <input type="password" name="contrasenia" placeholder="Contraseña">
+                        <input type="text"  required name="email" placeholder="Correo Electronico">
+                        <input type="password" required name="contrasenia" placeholder="Contraseña">
                         <button>Entrar</button>
                     </form>
 
                     <!--Register-->
                     <form action="login_register/registro_usuario.php" method="POST" class="formulario__register">
                         <h2>Registrarse</h2>
-                        <input type="text" name="nombre_completo" placeholder="Nombre completo">
-                        <input type="text" name="email" placeholder="Correo Electronico">
-                        <input type="text" name="usuario" placeholder="Usuario">
-                        <input type="password" name="contrasenia" placeholder="Contraseña">
+                        <input type="text" required name="nombre_completo" placeholder="Nombre completo">
+                        <input type="text"  required= name="email" placeholder="Correo Electronico">
+                        <input type="text" required name="usuario" placeholder="Usuario">
+                        <input type="password" required" name="contrasenia" placeholder="Contraseña">
                         <button>Registrarse</button>
                     </form>
                 </div>

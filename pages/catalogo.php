@@ -24,6 +24,7 @@ if(!isset($_SESSION['email'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/03ff38300c.js" crossorigin="anonymous"></script>
   <link rel="icon" href="../faticon.png">
   <link rel="stylesheet" href="../css/styles/style.css">
   <link rel="stylesheet" href="../css/styles/buscar.css">
@@ -49,6 +50,9 @@ if(!isset($_SESSION['email'])){
             <li class="nav-item">
               <a class="nav-link " href="catalogo.php">CATALOGO</a>
             </li>
+            <li>
+              <a class="nav-link" href="../reseñas/reseñas.php">RESEÑAS</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.php">NOSOTROS</a>
             </li>
@@ -65,27 +69,19 @@ if(!isset($_SESSION['email'])){
   <main>
 
     
-      <h4>Búsqueda rápida:</h4>
-      <ul class="filtros">
-        <a href="#herramientas">HERRAMIENTAS</a>
-        <a href="#indumentaria">INDUMENTARIA</a>
-        <a href="#insumos">INSUMOS</a>
-        <a href="#sanitarios">SANITARIOS</a>
-      </ul>
+
+    <div id="ctn-icon-search">
+      <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+      <input id="ctn-bars-search" type="text" name="" id="inputSearch" placeholder="¿Que deseas buscar?">
+    </div>
     
-
-    <span class="container__buscar">
-		  <input id="inputBuscar" type="text" placeholder="Buscar">
-		  <div class="btn">
-			<i class="fa fa-search"></i>
-		  </div>
-	  </span>
-
+    <ul id="box-search">
+      <li><a href="#herramientas"><i class="fa-solid fa-magnifying-glass"></i>HERRAMIENTAS</a></li>
+      <li><a href="#indumentaria"><i class="fa-solid fa-magnifying-glass"></i>INDUMENTARIA</a></li>
+      <li><a href="#insumos"><i class="fa-solid fa-magnifying-glass"></i>INSUMOS</a></li>
+      <li><a href="#sanitarios"><i class="fa-solid fa-magnifying-glass"></i>SANITARIOS</a></li>
+    </ul>
     
-
-
-
-
 
 
 

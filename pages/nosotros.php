@@ -51,6 +51,9 @@ if(!isset($_SESSION['email'])){
             <li class="nav-item">
               <a class="nav-link " href="catalogo.php">CATALOGO</a>
             </li>
+            <li>
+              <a class="nav-link" href="../reseñas/reseñas.php">RESEÑAS</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.php">NOSOTROS</a>
             </li>
