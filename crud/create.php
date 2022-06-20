@@ -4,7 +4,7 @@ require_once "config.php";
  
 // Define variables and initialize with empty values
 $name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
+$name_err = $salary_err  = $address_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -17,7 +17,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } else{
         $name = $input_name;
     }
-    
     // Validate address
     $input_address = trim($_POST["address"]);
     if(empty($input_address)){
@@ -47,8 +46,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Set parameters
             $param_name = $name;
-            $param_address = $address;
             $param_salary = $salary;
+            $param_address = $address;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -90,7 +89,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="page-header">
                         <h2>Agregar Empleado</h2>
                     </div>
-                    <p>Favor diligenciar el siguiente formulario, para agregar el empleado.</p>
+                    <p>Llenar el siguiente formulario para agregar empleados</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
                             <label>Nombre</label>

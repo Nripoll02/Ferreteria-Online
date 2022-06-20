@@ -47,7 +47,7 @@
                                     echo "<tr>";
                                         echo "<th>#</th>";
                                         echo "<th>Nombre</th>";
-                                        echo "<th>Dirección</th>";
+                                        echo "<th>Pais/Provincia</th>";
                                         echo "<th>Sueldo</th>";
                                         echo "<th>Acción</th>";
                                     echo "</tr>";
