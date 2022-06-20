@@ -64,7 +64,7 @@ if(!isset($_SESSION['email'])){
               <a class="nav-link" href="../pages/catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="../crud/index.php">ADMINISTRAR</a>
+              <a class="nav-link " href="../crud2/admin_page.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../pages/nosotros.php">NOSOTROS</a>
