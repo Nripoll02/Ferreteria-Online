@@ -1,0 +1,19 @@
+admin: nahuelripoll33@gmail.com  1234
+usuario: juan@gmail.com 1234
+
+¡Falta paginación y búsqueda unicamente!
+
+El crud se encuentra en el admin:
+admin/inicio.php
+
+O tambien se puede ingresar directamente:
+crud2/admin_page.php
+
+
+
+No pude hostear el sitio correctamente por eso solo puedo dejar el .rar con el código fuente y las bases de datos.
+
+Por alguna razón que desconozco, al momento de exportar las bases, me las exporta en .htm y no consigo encontrar la solucion.
+Dejo en el pdf el nombre de las bases y sus respectivas tablas.
+
+Disculpe las molestias
