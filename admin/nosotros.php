@@ -1,18 +1,19 @@
-<!-- <?php
+<?php
 
-// session_start();
-// if(!isset($_SESSION['usuario'])){
-//   echo'
-//     <script>
-//       alert("Por favor, debes iniciar sesion");
-//       window.location = "../index.php";
-//     </script>
-//   ';
-//   session_destroy();
-//   die();
+session_start();
+if(!isset($_SESSION['email'])){
+  echo'
+    <script>
+      alert("Por favor, debes iniciar sesion");
+      window.location = "../index.php";
+    </script>
+  ';
+  session_destroy();
+  die();
   
-// }
-?> -->
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +57,7 @@
               <a class="nav-link " href="catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="admin.php">ADMINISTRAR</a>
+              <a class="nav-link " href="../crud2/admin_page.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.php">NOSOTROS</a>

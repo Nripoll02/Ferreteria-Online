@@ -61,13 +61,13 @@ if(!isset($_SESSION['email'])){
               <a class="nav-link" href="inicio.php">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/catalogo.php">CATALOGO</a>
+              <a class="nav-link" href="catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="../crud2/admin_page.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/nosotros.php">NOSOTROS</a>
+              <a class="nav-link" href="nosotros.php">NOSOTROS</a>
             </li>
           </ul>
         </div>

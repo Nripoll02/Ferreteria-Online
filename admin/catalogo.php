@@ -1,18 +1,18 @@
-<!-- <?php
+<?php
 
-// session_start();
-// if(!isset($_SESSION['usuario'])){
-//   echo'
-//     <script>
-//       alert("Por favor, debes iniciar sesion");
-//       window.location = "../index.php";
-//     </script>
-//   ';
-//   session_destroy();
-//   die();
+session_start();
+if(!isset($_SESSION['email'])){
+  echo'
+    <script>
+      alert("Por favor, debes iniciar sesion");
+      window.location = "../index.php";
+    </script>
+  ';
+  session_destroy();
+  die();
   
-// }
-?> -->
+}
+?>
 
 
 <!DOCTYPE html>
@@ -24,6 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/03ff38300c.js" crossorigin="anonymous"></script>
   <link rel="icon" href="../faticon.png">
   <link rel="stylesheet" href="../css/styles/style.css">
   <link rel="stylesheet" href="../css/styles/buscar.css">
@@ -40,7 +41,6 @@
       <a  href="../login_register/cerrar_sesion.php">Log out</a>
       </nav>
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,7 +56,7 @@
               <a class="nav-link " href="catalogo.php">CATALOGO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="admin.php">ADMINISTRAR</a>
+              <a class="nav-link " href="../crud2/admin_page.php">ADMINISTRAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.php">NOSOTROS</a>
@@ -72,30 +72,16 @@
 
 
   <main>
-
-    
+  <nav class="filtros">
       <h4>Búsqueda rápida:</h4>
-      <ul class="filtros">
+      <ul>
         <a href="#herramientas">HERRAMIENTAS</a>
         <a href="#indumentaria">INDUMENTARIA</a>
         <a href="#insumos">INSUMOS</a>
         <a href="#sanitarios">SANITARIOS</a>
       </ul>
+    </nav>
     
-
-    <span class="container__buscar">
-		  <input id="inputBuscar" type="text" placeholder="Buscar">
-		  <div class="btn">
-			<i class="fa fa-search"></i>
-		  </div>
-	  </span>
-
-    
-
-
-
-
-
 
 
     <div class="informacion">

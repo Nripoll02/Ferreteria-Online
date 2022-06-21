@@ -35,7 +35,12 @@ if(!isset($_SESSION['email'])){
 <body>
 
   <header>
-    <h1 class="logo">CATALOGO</h1>
+  <div>
+      <h1 class="logo">CATALOGO</h1>
+      <nav>
+      <a  href="../login_register/cerrar_sesion.php">Log out</a>
+      </nav>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,21 +70,15 @@ if(!isset($_SESSION['email'])){
 
   <main>
 
-    
-
-    <div id="ctn-icon-search">
-      <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-      <input id="ctn-bars-search" type="text" name="" id="inputSearch" placeholder="¿Que deseas buscar?">
-    </div>
-    
-    <ul id="box-search">
-      <li><a href="#herramientas"><i class="fa-solid fa-magnifying-glass"></i>HERRAMIENTAS</a></li>
-      <li><a href="#indumentaria"><i class="fa-solid fa-magnifying-glass"></i>INDUMENTARIA</a></li>
-      <li><a href="#insumos"><i class="fa-solid fa-magnifying-glass"></i>INSUMOS</a></li>
-      <li><a href="#sanitarios"><i class="fa-solid fa-magnifying-glass"></i>SANITARIOS</a></li>
-    </ul>
-    
-
+  <nav class="filtros">
+      <h4>Búsqueda rápida:</h4>
+      <ul>
+        <a href="#herramientas">HERRAMIENTAS</a>
+        <a href="#indumentaria">INDUMENTARIA</a>
+        <a href="#insumos">INSUMOS</a>
+        <a href="#sanitarios">SANITARIOS</a>
+      </ul>
+    </nav>
 
 
     <div class="informacion">
